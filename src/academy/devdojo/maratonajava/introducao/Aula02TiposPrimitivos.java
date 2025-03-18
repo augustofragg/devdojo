@@ -12,7 +12,7 @@ public class Aula02TiposPrimitivos {
 
         //Numeros decimais
         double salarioDouble = 2000;
-        float salarioFloat = 2500;
+        float salarioFloat = 2500.0F;
 
         //Valores numericos
         byte idadeByte = 10;
@@ -34,6 +34,32 @@ public class Aula02TiposPrimitivos {
         System.out.println("Caracter " + caracter);
 
         System.out.println("Caracter unicode " + caracterUniCode);
+
+
+        // Casting
+        //Long para int
+        int num = (int) 100000000000L;
+
+        System.out.println("\nLong para int: " + num);
+
+        //Double para int
+        int numD = (int) 12.267;
+
+        System.out.println("\nDouble para int: " + numD);
+
+        //Double para float sem alteracao
+
+        float numFloat = (float) 155.234D;
+
+        System.out.println("\nDouble para float: " + numFloat);
+
+
+
+
+
+
+
+
 
     }
 }
