@@ -17,21 +17,47 @@ public class Aula04Operadores {
         System.out.println();
 
         int resultadoSoma = numero01 + numero02;
-        System.out.println(resultadoSoma);
-
+        int resultadoSubtracao = numero01 - numero02;
         int resultadoMult = numero01 * numero02;
+
+        System.out.println(resultadoSoma);
+        System.out.println(resultadoSubtracao);
         System.out.println(resultadoMult);
 
-        //A divisão entre dois inteiros é um inteiro
-//        double resultadoDouble = numero01 / numero02;
-//        System.out.println(resultadoDouble);
 
-        // Mas caso haja com valor tipo double o resultado sere em double
+        //A divisão entre dois inteiros é um inteiro
+        //double resultadoDouble = numero01 / numero02;
+        //System.out.println(resultadoDouble);
+
+        // Mas caso haja com valor tipo double o resultado sera em double
         double resultadoDouble =   numero01 / (double) numero02;
         System.out.println(resultadoDouble);
+        System.out.println("\n---------------------");
+
+        // Operadore de resto da divisao
+        int resto = 20 % 2; // 20 é par
+
+        System.out.println(resto);
+
+        resto = 13 % 2; // 13 é impar
+        System.out.println(resto);
+
+        System.out.println("\n---------------------");
+        //Operaroes lógicos
+        // <  >  >=  <=  === !==
+
+        boolean isDezMaiorQueVinte = 10 > 20;
+        boolean isDezMenorQueVinte = 10 < 20;
+        boolean isDezIgualVinte = 10 == 20;
+        boolean isDezIgualDez = 10 == 10;
+        boolean isDezDiferenteDez = 10 != 10;
 
 
-
+        System.out.println("isDezMaiorQueVinte: " + isDezMaiorQueVinte);
+        System.out.println("isDezMenorQueVinte: " + isDezMenorQueVinte);
+        System.out.println("isDezIqualVinte: " + isDezIgualVinte);
+        System.out.println("IsDezIgualDez " + isDezIgualDez);
+        System.out.println("isDezDiferenteDez: " + isDezDiferenteDez);
 
 
 
