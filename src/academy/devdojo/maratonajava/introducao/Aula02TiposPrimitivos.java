@@ -54,6 +54,18 @@ public class Aula02TiposPrimitivos {
         System.out.println("\nDouble para float: " + numFloat);
 
 
+        //Inferência de Tipos
+//        var car = "Mercedes";
+//        var height = 1.73;
+//
+//        System.out.println("\ncar: " + car + "\nHeight: " + height);
+
+
+        //String
+
+        String nome = "Goku";
+
+        System.out.println("\nString nome: " + nome);
 
 
 
