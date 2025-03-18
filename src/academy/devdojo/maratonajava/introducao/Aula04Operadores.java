@@ -83,5 +83,42 @@ public class Aula04Operadores {
         boolean isPlaystationCincoCompravel = valorTotalContaCorrente > valorPlaystation || valorTotalContaPoupanca > valorPlaystation;
 
         System.out.println("isPlaystationCincoCompravel " + isPlaystationCincoCompravel);
+
+        System.out.println("\n------------------------");
+
+        // Operadores de atribuição
+
+        // = += -= *= /= %=
+
+        double bonus = 1800; // 1800
+        bonus += 1000; // 2800
+        bonus -= 1000; // 1800
+        bonus *= 2;
+        bonus /= 2;
+        bonus %= 2;
+        System.out.println(bonus);
+
+        // ++ --
+        int contador = 0;
+        contador += 1; //contador = contador +1
+        contador++;
+        contador--;
+        ++contador;
+
+        System.out.println(contador);
+
+        // operador de atribuição
+        int contador2 = 0;
+
+        //Operador a direita e feito o acrescimo apos a analise da variavel
+        System.out.println(contador2++);
+        System.out.println(contador2);
+
+        contador2 = 0;
+
+        //Operador a esquerda a atribuição é feita primeirolk
+        System.out.println(++contador2);
+
+
     }
 }
