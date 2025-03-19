@@ -12,8 +12,8 @@ package academy.devdojo.maratonajava.introducao;
 public class Aula03TiposPrimitivosExercicio {
     public static void main(String[] args) {
 
-        String name = "Carlos Augusto";
-        String address = "Avenida Alberto Algusto, numero 371";
+        String name = "Goku";
+        String address = "Terra";
         String date = "18/03/2025";
         double salary = 3000.00;
 
