@@ -5,18 +5,25 @@ public class Anime {
     private String tipo;
     private int episodeos;
     private String genero;
+    private String studio;
 
     //Construtor padrão
     public Anime() {
+        System.out.println("Dentro do construtor sem argumentos");
     }
 
     //Construtor sobrecarregado
     public Anime(String nome, String tipo, int episodeos, String genero) {
-        System.out.println("Dentro do construtor");
+        this();
         this.nome = nome;
         this.tipo = tipo;
         this.episodeos = episodeos;
         this.genero = genero;
+    }
+
+    public Anime(String nome, String tipo, int episodeos, String genero, String studio) {
+        this(nome,tipo,episodeos,genero);
+        this.studio = studio;
     }
 
     public void imprime() {
@@ -24,6 +31,7 @@ public class Anime {
         System.out.println(this.tipo);
         System.out.println(this.episodeos);
         System.out.println(this.genero);
+        System.out.println(this.studio);
     }
 
     public int getEpisodeos() {
