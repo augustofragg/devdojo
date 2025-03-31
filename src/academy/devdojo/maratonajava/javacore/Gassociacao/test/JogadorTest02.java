@@ -11,7 +11,7 @@ public class JogadorTest02 {
 
         //Definindo uma associação uniderecional
         //Entre o objeto Jogador e time
-        jogador.setTime(time);
+          jogador.setTime(time);
 
         jogador.Imprimir();
 

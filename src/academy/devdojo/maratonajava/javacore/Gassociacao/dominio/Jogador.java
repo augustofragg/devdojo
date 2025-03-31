@@ -10,7 +10,10 @@ public class Jogador {
 
     public void Imprimir() {
         System.out.println(this.nome);
-        System.out.println(this.time.getName());
+
+        if(this.time != null) {
+            System.out.println(this.time.getName());
+        }
     }
 
     public String getNome() {
