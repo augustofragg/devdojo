@@ -2,7 +2,7 @@ package academy.devdojo.maratonajava.javacore.Oexception.runtime.test;
 
 // Excecao tipo unchecked
 
-public class RunTimeExceptionTest01 {
+public class RuntimeExceptionTest01 {
     public static void main(String[] args) {
 
         int[] nums = {1,2};
