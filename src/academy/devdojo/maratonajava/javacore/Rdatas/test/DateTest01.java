@@ -2,7 +2,7 @@ package academy.devdojo.maratonajava.javacore.Rdatas.test;
 
 import java.util.Date;
 
-public class Datetest01 {
+public class DateTest01 {
     public static void main(String[] args) {
 
         //Classe Date - não é mais utilizada só em legado
@@ -18,10 +18,6 @@ public class Datetest01 {
         dateHour.setTime(dateHour.getTime() + 3_600_000);
 
         System.out.println(dateHour);
-
-
-        //Conta o tempo a partir de millisegundos
-
 
 
     }

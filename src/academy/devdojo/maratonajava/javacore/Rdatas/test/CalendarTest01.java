@@ -30,9 +30,5 @@ public class CalendarTest01 {
         //Acicao de horas
         c.add(Calendar.HOUR_OF_DAY,2);
         System.out.println(c.getTime());
-
-
-
-
     }
 }
