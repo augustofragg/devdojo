@@ -7,9 +7,9 @@ public class Consumidor {
     private Long id;
     private String nome;
 
-    public Consumidor(String home) {
+    public Consumidor(String nome) {
         this.id = ThreadLocalRandom.current().nextLong(0,100_000);
-        this.nome = home;
+        this.nome = nome;
     }
 
     @Override
