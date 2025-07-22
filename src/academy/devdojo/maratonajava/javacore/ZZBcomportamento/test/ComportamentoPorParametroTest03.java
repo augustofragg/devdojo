@@ -22,6 +22,16 @@ public class ComportamentoPorParametroTest03 {
 
     }
 
-    
+    private static <T> List<T> filter(List<T> list, Predicate<T> predicate) {
+        List<T> listFilter = new ArrayList<>();
+
+        for (T t : list) {
+            if(predicate.test(t)) {
+                listFilter.add(t);
+            }
+        }
+
+        return listFilter;
+    }
 
 }
