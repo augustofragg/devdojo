@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.ZZAclassesInternas.test;
 
-public class OuterClassTest01 {
+public class OuterClassesTest01 {
 
     private String name = "Monkey D. Luffy";
 
@@ -9,7 +9,7 @@ public class OuterClassTest01 {
         public void printOuterClassAttribute() {
             System.out.println(name);
             System.out.println("Contexto da classe Onde se encontra: " + this);
-            System.out.println("Contexto da classe externa " + OuterClassTest01.this);
+            System.out.println("Contexto da classe externa " + OuterClassesTest01.this);
         }
     }
 
@@ -17,12 +17,12 @@ public class OuterClassTest01 {
         //Criando objeto da classe Interna
 
         //Exemplo 1
-        OuterClassTest01 outerClassTest = new OuterClassTest01();
+        OuterClassesTest01 outerClassTest = new OuterClassesTest01();
 
         Inner inner = outerClassTest.new Inner();
         inner.printOuterClassAttribute();
 
-        Inner inner2 = new OuterClassTest01().new Inner();
+        Inner inner2 = new OuterClassesTest01().new Inner();
         inner2.printOuterClassAttribute();
 
     }
