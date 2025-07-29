@@ -11,4 +11,8 @@ public class AnimeComparators {
     public static int compareByEpisodes(Anime o1, Anime o2) {
         return Integer.compare(o1.getEpisodes(), o2.getEpisodes());
     }
+
+    public int compareByEpisodesNonStatic(Anime o1, Anime o2) {
+        return Integer.compare(o1.getEpisodes(), o2.getEpisodes());
+    }
 }
