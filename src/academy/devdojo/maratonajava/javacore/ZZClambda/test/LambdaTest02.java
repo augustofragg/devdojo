@@ -21,6 +21,8 @@ public class LambdaTest02 {
             R r = function.apply(e);
             newList.add(r);
         }
+
+
         return newList;
     }
 }
