@@ -32,10 +32,12 @@ public class StreamTest13 {
 
 
         Map<Category, Map<PROMOTION, List<LightNovel>>> collect1 = lightNovels.stream().collect(
-                Collectors.groupingBy(LightNovel::getCategory,
-                        Collectors.groupingBy(ln -> ln.getPrice() > 6 ? PROMOTION.NORMAL_PRICE : PROMOTION.UNDER_PROMOTION
-                        )));
+                Collectors.groupingBy(LightNovel::getCategory, Collectors.groupingBy(StreamTest13::getPromotion)));
 
         System.out.println(collect1);
+    }
+
+    public static PROMOTION getPromotion(LightNovel ln) {
+        return ln.getPrice() < 6 ? PROMOTION.UNDER_PROMOTION : PROMOTION.NORMAL_PRICE;
     }
 }
