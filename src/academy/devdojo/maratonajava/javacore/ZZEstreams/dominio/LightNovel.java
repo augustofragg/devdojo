@@ -1,10 +1,18 @@
 package academy.devdojo.maratonajava.javacore.ZZEstreams.dominio;
 
 import java.util.Objects;
+import java.util.function.Supplier;
 
 public class LightNovel {
     private String title;
     private double price;
+    private Category category;
+
+    public LightNovel(String title, double price, Category category) {
+        this.title = title;
+        this.price = price;
+        this.category = category;
+    }
 
     public LightNovel(String title, double price) {
         this.title = title;
@@ -29,7 +37,12 @@ public class LightNovel {
         return "LightNovel{" +
                 "title='" + title + '\'' +
                 ", price=" + price +
+                ", category=" + category +
                 '}';
+    }
+
+    public Category getCategory() {
+        return category;
     }
 
     public String getTitle() {
