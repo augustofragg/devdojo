@@ -25,3 +25,5 @@ public class EmailDeliveryTest01 {
 
     }
 }
+
+//228 - Threads pt 09 - Sincronismo de thread pt 05 - Wait, notify e notifyAll
