@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.ZZFthreads.test;
 
-import academy.devdojo.maratonajava.javacore.ZZFthreads.test.dominio.Account;
+import academy.devdojo.maratonajava.javacore.ZZFthreads.dominio.Account;
 
 
 

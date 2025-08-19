@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.ZZFthreads.test.dominio;
+package academy.devdojo.maratonajava.javacore.ZZFthreads.dominio;
 
 public class Account {
     private int balance = 50;
