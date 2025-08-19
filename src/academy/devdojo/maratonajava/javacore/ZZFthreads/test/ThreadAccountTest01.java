@@ -2,6 +2,8 @@ package academy.devdojo.maratonajava.javacore.ZZFthreads.test;
 
 import academy.devdojo.maratonajava.javacore.ZZFthreads.test.dominio.Account;
 
+
+
 public class ThreadAccountTest01 implements Runnable {
     private Account account = new Account();
 
@@ -25,14 +27,17 @@ public class ThreadAccountTest01 implements Runnable {
     }
 
     private void withdrawal(int amount) {
-        if(account.getBalance() >= amount) {
-            System.out.println(getThreadName() + " está indo sacar dinhero");
-            account.withdrawal(amount);
-            System.out.println(getThreadName() + " completou o saque, valor atual da conta " + account.getBalance());
-        }
-        else {
-            System.out.println("Sem dinheiro para " + getThreadName() + " efeturar o saque " + account.getBalance());
+        System.out.println(getThreadName() + " ##### fora da synchronized");
+        synchronized (account) {
+            System.out.println(getThreadName() + " ***** dentro da synchronized");
+            if (account.getBalance() >= amount) {
+                System.out.println(getThreadName() + " está indo sacar dinhero");
+                account.withdrawal(amount);
+                System.out.println(getThreadName() + " completou o saque, valor atual da conta " + account.getBalance());
+            } else {
+                System.out.println("Sem dinheiro para " + getThreadName() + " efeturar o saque " + account.getBalance());
 
+            }
         }
     }
 
